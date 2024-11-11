@@ -1,0 +1,5 @@
+fastapi==0.111.0
+sqlalchemy==2.0.30
+pyjwt==2.8.0
+passlib==1.7.4
+requests==2.32.3

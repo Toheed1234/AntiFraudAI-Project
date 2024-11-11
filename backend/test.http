@@ -1,0 +1,122 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2xlIiwiZXhwIjoxNzE3OTcyMzIwfQ.iES9SfL8t25Hxfz4JgfkboWJ26PYKtnUos2RcV54voE
+###
+
+POST http://localhost:8000/auth/register HTTP/1.1
+content-type: application/json
+
+{"username":"bole","password":"123","email":"edisnord@gmail.com","balance":100,"name":"Edis"}
+
+###
+
+POST http://localhost:8000/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "bole",
+    "password": "123"
+}
+
+### Login
+
+POST http://localhost:8000/auth/token HTTP/1.1
+content-type: application/x-www-form-urlencoded 
+
+username=bole
+&password=123
+
+### Get transactions
+
+GET http://localhost:8000/transactions HTTP/1.1
+authorization: Bearer {{token}}
+content-type: application/json
+
+### add transaction
+
+post http://localhost:8000/transactions http/1.1
+authorization: Bearer {{token}}
+content-type: application/json
+
+{
+    "amount": 412421214214124129,
+    "buyer_id": 1,
+    "items": [
+    {
+        "name": "Test item",
+        "value": 1022324.0
+    },
+    {
+        "name": "Byrek me spinaq",
+        "value": 2.0
+    }
+    ]
+}
+
+### Add buyer
+POST http://localhost:8000/buyers HTTP/1.1
+authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "address": "123 Main St, Anytown, USA"
+}
+
+### Get all buyers
+GET http://localhost:8000/buyers HTTP/1.1
+authorization: Bearer {{token}}
+
+###
+
+POST http://localhost:8000/transactions/7/reject
+authorization: Bearer {{token}}
+
+### Get transactions of buyer
+
+GET http://localhost:8000/buyers/2/transactions HTTP/1.1
+authorization:  Bearer {{token}}
+
+### Get individual buyer
+
+GET http://localhost:8000/buyers/2 HTTP/1.1
+authorization:  Bearer {{token}}
+
+### Blacklist buyer
+
+POST http://localhost:8000/buyers/2/blacklist HTTP/1.1
+authorization:  Bearer {{token}}
+
+### Whitelist buyer
+
+POST http://localhost:8000/buyers/2/whitelist HTTP/1.1
+authorization:  Bearer {{token}}
+###
+
+GET http://localhost:8000/items HTTP/1.1
+authorization: Bearer {{token}}
+
+###
+
+GET http://localhost:8000/items/2 HTTP/1.1
+authorization: Bearer {{token}}
+
+### Generate report, send to mail
+GET http://localhost:8000/generate-report?start_date=2024-06-01&end_date=2024-06-03 HTTP/1.1
+authorization: Bearer {{token}}
+
+### Get all transactions
+GET http://localhost:8000/transactions HTTP/1.1
+authorization : Bearer {{token}}
+
+### Get one transaction
+GET http://localhost:8000/transactions/1 HTTP/1.1
+authorization : Bearer {{token}}
+
+### Get items of transaction
+GET http://localhost:8000/transactions/3/items HTTP/1.1
+authorization : Bearer {{token}}
+
+### Get buyer pending transactions
+
+GET http://localhost:8000/buyers/1/transactions/pending HTTP/1.1
+authorization:  Bearer {{token}}

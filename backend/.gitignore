@@ -1,0 +1,6 @@
+fastapienv
+localantifraud.db
+/__pycache__
+*/__pycache__
+.env
+local.db

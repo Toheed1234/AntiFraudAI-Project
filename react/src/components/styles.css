@@ -1,0 +1,227 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+.form{
+    width: 50%;
+    margin: auto;
+    margin-top: 150px;
+}
+.form h2{
+    text-align: center;
+}
+.form p{
+    color: gray;
+    text-align: center;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  
+}
+input[type=checkbox]{background-color: #eb5757;}
+
+button {
+  background-color: #ff698d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.back{
+    background-color: transparent;
+    color: gray;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .back button:hover {
+    opacity: 0.8;
+  }
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+span.psw a{
+    color: #ff698d;
+}
+input[type="checkbox"] {
+    accent-color: #eb5757;
+}
+
+#SidePannel{
+  position: fixed;
+  top: 0px;
+  left:0px;
+  width: 20%;
+  height: 100%;
+  background-color: black;
+}
+
+#SidePannel h2{
+  color:white;
+  text-align: center;
+}
+
+.active button{
+  position:relative;
+  left: 25%;
+  background-color: #ff698d;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+}
+.inactive button{
+  color: gray;
+  background-color: transparent;
+}
+.inactive button:hover {
+  position: relative;
+  color: white;
+  background-color: #ff698d;
+  left: 25%;
+  width: 50%
+}
+
+.inactive button:active{
+  opacity: 1;
+  position:relative;
+  left: 25%;
+  background-color: #ff698d;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+}
+#SidePannel #logout{
+  position: relative;
+  top: 1%;
+}
+#logout button{
+  color: gray;
+  background-color: transparent;
+}
+#logout button:hover{
+  position: relative;
+  color: white;
+  background-color: #ff698d;
+  left: 25%;
+  width: 50%
+}
+#logout button:active{
+  opacity: 1;
+  position:relative;
+  left: 25%;
+  background-color: #ff698d;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+}
+table{
+  position:fixed;
+  left: 20%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  margin-top: 3%;
+  width: 80%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  
+}
+td button{
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: rgb(227, 227, 227);
+}
+tr:nth-child(odd) {
+  background-color: white;
+}
+tr:hover{
+  color: white;
+  background-color: #ff698d;
+}
+td:hover, th:hover{
+  color: black;
+  background-color: white;
+}
+#SecondTable{
+  position: fixed;
+  top: 50%;
+}
+#SingleTable{
+  position: fixed;
+  top: 20%;
+}
+#LargeTable{
+  position: fixed;
+  top: 0%;
+}
+#GenReport{
+  position: fixed;
+  left: 55%;
+  top: 70%;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+}
+#GenReportLarge{
+  position: fixed;
+  left: 55%;
+  top: 75%;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+}
+#tittle{
+  position: fixed;
+  left: 21%;
+  top: 15%;
+  color: gray;
+}
+.reject{
+  display: block;
+  margin: auto;
+  padding: 1%;
+  width: auto;
+  color: rgb(255, 44, 44);
+  background-color: rgba(255, 44, 44, 0.408);
+}
+.approve{
+  display: block;
+  margin: auto;
+  padding: 1%;
+  width: auto;
+  color: rgb(19, 116, 47);
+  background-color: rgba(52, 255, 100, 0.408);
+}

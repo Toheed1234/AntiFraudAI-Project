@@ -1,0 +1,4 @@
+fastapienv
+__pycache__
+*/__pycache__
+local.db

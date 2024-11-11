@@ -1,0 +1,70 @@
+POST http://127.0.0.1:5000/predict HTTP/1.1
+Content-Type: application/json
+
+[
+    {
+        "id": 0,
+        "step": 1,
+        "type": "PAYMENT",
+        "amount": 9839.64,
+        "nameOrig": 757869,
+        "oldbalanceOrg": 170136.0,
+        "newbalanceOrig": 160296.36,
+        "nameDest": 1662094,
+        "oldbalanceDest": 0.0,
+        "newbalanceDest": 0.0,
+        "isFlaggedFraud": 0
+    },
+    {
+        "id": 1,
+        "step": 1,
+        "type": "PAYMENT",
+        "amount": 1864.28,
+        "nameOrig": 2188998,
+        "oldbalanceOrg": 21249.0,
+        "newbalanceOrig": 19384.72,
+        "nameDest": 1733924,
+        "oldbalanceDest": 0.0,
+        "newbalanceDest": 0.0,
+        "isFlaggedFraud": 0
+    },
+    {
+        "id": 2,
+        "step": 1,
+        "type": "TRANSFER",
+        "amount": 181.0,
+        "nameOrig": 1002156,
+        "oldbalanceOrg": 181.0,
+        "newbalanceOrig": 0.0,
+        "nameDest": 439685,
+        "oldbalanceDest": 0.0,
+        "newbalanceDest": 0.0,
+        "isFlaggedFraud": 0
+    },
+    {
+        "id": 3,
+        "step": 1,
+        "type": "CASH_OUT",
+        "amount": 181.0,
+        "nameOrig": 5828262,
+        "oldbalanceOrg": 181.0,
+        "newbalanceOrig": 0.0,
+        "nameDest": 391696,
+        "oldbalanceDest": 21182.0,
+        "newbalanceDest": 0.0,
+        "isFlaggedFraud": 0
+    },
+    {
+        "id": 4,
+        "step": 1,
+        "type": "PAYMENT",
+        "amount": 11668.14,
+        "nameOrig": 3445981,
+        "oldbalanceOrg": 41554.0,
+        "newbalanceOrig": 29885.86,
+        "nameDest": 828919,
+        "oldbalanceDest": 0.0,
+        "newbalanceDest": 0.0,
+        "isFlaggedFraud": 0
+    }
+]
